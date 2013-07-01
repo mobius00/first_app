@@ -5,8 +5,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-group :development do  
-    gem 'sqlite3', '1.3.4'  
+group :development, :test do
+  gem 'sqlite3'
 end
 
 # Use SCSS for stylesheets
@@ -36,9 +36,9 @@ group :doc do
 end
 
 #
-group :production do    
-    gem 'pg', '0.12.2'  
-end  
+group :production do
+  gem 'pg'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
